@@ -1,10 +1,10 @@
 # React+React-router4.x+Ant-Design+Flux 
 
-#一、安装依赖包
+##一、安装依赖包
     npm install --save
-#二、启动项目 
+##二、启动项目 
     npm start
-#三、打包
+##三、打包
     npm build    
 
 
