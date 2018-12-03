@@ -1,17 +1,17 @@
 # React+React-router4.x+Ant-Design+Flux 
 
-##一、安装依赖包
+#一、安装依赖包
     npm install --save
-##二、启动项目 
+#二、启动项目 
     npm start
-##三、打包
+#三、打包
     npm build    
 
 
 
 
 # react-router-dom 配置
-## 1.react-router 官方文档 ##       https://reacttraining.com/react-router/web/guides/quick-start
+## 1.react-router 官方文档     https://reacttraining.com/react-router/web/guides/quick-start
 
 ## 2.安装react-router-dom 
     cnpm install react-router-dom --save
