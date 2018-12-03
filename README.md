@@ -1,3 +1,15 @@
+# React+React-router4.x+Ant-Design+Flux 
+
+#一、安装依赖包
+    npm install --save
+#二、启动项目 
+    npm start
+#三、打包
+    npm build    
+
+
+
+
 # react-router-dom 配置
 ## 1.react-router 官方文档 ##       https://reacttraining.com/react-router/web/guides/quick-start
 
@@ -7,7 +19,7 @@
 ## 3.找到项目的根组件  引入react-router-dom  
     import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-## 4.配置路由
+## 4.引入组件  配置路由
     render() {
     return (
       <Router>
@@ -24,3 +36,4 @@
       </Router>
     );
   }
+  exact 表示严格匹配
