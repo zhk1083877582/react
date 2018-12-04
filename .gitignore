@@ -17,6 +17,7 @@
 .env.production.local
 
 node_modules/
+.history/
 dist/
 npm-debug.log
 
