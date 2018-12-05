@@ -33,7 +33,7 @@ class List extends Component {
     render() {
         return (
             <div>
-               
+               <button><Link to='/Login'>跳转登录</Link></button>
 				{
                     this.state.list.map((val,key)=>{
                         return(
