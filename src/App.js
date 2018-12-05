@@ -6,6 +6,7 @@ import A from './components/Arouter';
 import B from './components/Brouter';
 import C from './components/Crouter';
 import Content from './components/Content-Crouter';
+import ProduceContent from './components/ProduceContent.js';
 
 import './assets/css/index.css';
 
@@ -51,7 +52,7 @@ class App extends Component {
           <Route path="/B" component={B} />
           <Route path="/C" component={C} />
           <Route path="/content/:aid" component={Content} />
-          
+          <Route path="/producecontent" component={ProduceContent}/>
 
           {/* 
           // 生命周期

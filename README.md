@@ -37,3 +37,17 @@
     );
   }
   exact 表示严格匹配
+#  React 动态路由传值
+## 1.动态路由配置
+    <Route path="/content/:aid" component={Content} />
+## 2.对应的动态路由加载的组件里面 获取传值
+   this.props.match.params.aid
+
+
+#  React 路由Get传值   
+
+## 1.Get路由配置
+    <Route path="/producecontent" component={ProduceContent}/>
+## 2.对应的路由加载的组件里面 获取传值    
+    this.props.location.search
+    url.parse(this.props.location.search,true)解析url
