@@ -8,10 +8,14 @@ import C from './components/Crouter';
 import Content from './components/Content-Crouter';
 import ProduceContent from './components/ProduceContent.js';
 
-import './assets/css/index.css';
+import './assets/css/basic.css';
 
 import Lifecycle from './components/Lifecycle.js';
 
+
+//demo
+import List from './components/demo/List';
+import Food from './components/demo/ProductContent';
 
 class App extends Component {
 
@@ -42,19 +46,23 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-        <header className="title">
-          <Link to='/'>A</Link>
-          <Link to='/B'>B</Link>
-          <Link to='/C'>C</Link>
-        </header>
-          
-          <Route exact path="/" component={A} />
-          <Route path="/B" component={B} />
-          <Route path="/C" component={C} />
-          <Route path="/content/:aid" component={Content} />
-          <Route path="/producecontent" component={ProduceContent}/>
-
+            <Route exact path="/" component={List} />
+            <Route path="/Food/:id" component={Food} />
           {/* 
+          //react 路由
+            <header className="title">
+              <Link to='/'>A</Link>
+              <Link to='/B'>B</Link>
+              <Link to='/C'>C</Link>
+            </header>
+          
+            <Route exact path="/" component={A} />
+            <Route path="/B" component={B} />
+            <Route path="/C" component={C} />
+            <Route path="/content/:aid" component={Content} />
+            <Route path="/producecontent" component={ProduceContent}/>
+
+
           // 生命周期
           {
             this.state.flag?<Lifecycle title={this.state.title} />:""
