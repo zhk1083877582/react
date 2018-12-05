@@ -22,7 +22,9 @@
     left: .6rem;
     transform: rotate(45deg);
     margin-right: .4rem; }
-
+  .back a{
+    color:#fff
+  }
 .p_content .p_info {
   background: #fff; }
   .p_content .p_info img {
@@ -100,4 +102,3 @@
     margin-top: .8rem;
     margin-right: .5rem; }
 
-/*# sourceMappingURL=pcontent.css.map */
