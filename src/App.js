@@ -2,20 +2,22 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
-import A from './components/Arouter';
-import B from './components/Brouter';
-import C from './components/Crouter';
-import Content from './components/Content-Crouter';
-import ProduceContent from './components/ProduceContent.js';
+// import A from './components/Arouter';
+// import B from './components/Brouter';
+// import C from './components/Crouter';
+// import Content from './components/Content-Crouter';
+// import ProduceContent from './components/ProduceContent.js';
+
 
 import './assets/css/basic.css';
 
-import Lifecycle from './components/Lifecycle.js';
+// import Lifecycle from './components/Lifecycle.js';
 
 
 //demo
 import List from './components/demo/List';
 import Food from './components/demo/ProductContent';
+import Login from './components/demo/Login';
 
 class App extends Component {
 
@@ -48,6 +50,7 @@ class App extends Component {
         <div className="App">
             <Route exact path="/" component={List} />
             <Route path="/Food/:id" component={Food} />
+            <Route path="/Login" component={Login} />
           {/* 
           //react 路由
             <header className="title">
