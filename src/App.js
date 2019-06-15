@@ -14,6 +14,9 @@ import './assets/css/basic.css';
 
 // import Lifecycle from './components/Lifecycle.js';
 
+// 二刷react
+import Home  from './components/two/Home'
+import ReactModel  from './components/two/ReactModel'
 
 //demo
 import List from './components/demo/List';
@@ -49,9 +52,12 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-            <Route exact path="/" component={List} />
+            {/* <Home/> */}
+            <br />
+            <ReactModel />
+            {/* <Route exact path="/" component={List} />
             <Route path="/Food/:id" component={Food} />
-            <Route path="/Login" component={Login} />
+            <Route path="/Login" component={Login} /> */}
           {/* 
           //react 路由
             <header className="title">
