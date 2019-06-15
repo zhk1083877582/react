@@ -17,6 +17,14 @@ class ReactModel extends React.Component {
     getInputValue=()=>{
         console.log(this.state.userName1)
     }
+
+    //键盘事件
+    KeyDown=(e)=>{
+        console.log(e.keyCode)
+        if(e.keyCode === 13){
+            alert(e.target.value)
+        }
+    }
     render() {
         return (
             <div>
@@ -26,6 +34,9 @@ class ReactModel extends React.Component {
                 <input id='listuserName' ref='userName' onChange={this.changeValue2} value={this.state.userName1}></input>
                 <br/><br/>
                 <button onClick={this.getInputValue}>获取输入框的值</button>   
+                <br/><br/>
+                <p>键盘事件</p>
+                <input onKeyDown={this.KeyDown}></input>
             </div>
         );
     }

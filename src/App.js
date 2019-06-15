@@ -17,6 +17,7 @@ import './assets/css/basic.css';
 // 二刷react
 import Home  from './components/two/Home'
 import ReactModel  from './components/two/ReactModel'
+import Formsubmit  from './components/two/Formsubmit'
 
 //demo
 import List from './components/demo/List';
@@ -54,7 +55,8 @@ class App extends Component {
         <div className="App">
             {/* <Home/> */}
             <br />
-            <ReactModel />
+            {/* <ReactModel /> */}
+            <Formsubmit />
             {/* <Route exact path="/" component={List} />
             <Route path="/Food/:id" component={Food} />
             <Route path="/Login" component={Login} /> */}
