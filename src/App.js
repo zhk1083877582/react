@@ -2,23 +2,24 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
-// import A from './components/Arouter';
-// import B from './components/Brouter';
-// import C from './components/Crouter';
-// import Content from './components/Content-Crouter';
-// import ProduceContent from './components/ProduceContent.js';
+import A from './components/Arouter';
+import B from './components/Brouter';
+import C from './components/Crouter';
+import Content from './components/Content-Crouter';
+import ProduceContent from './components/ProduceContent.js';
 
 
 
 import './assets/css/basic.css';
 
-// import Lifecycle from './components/Lifecycle.js';
+import Lifecycle from './components/Lifecycle.js';
 
 // 二刷react
 import Home  from './components/two/Home'
 import ReactModel  from './components/two/ReactModel'
 import Formsubmit  from './components/two/Formsubmit'
 import TodoList  from './components/two/TodoList'
+import RouterNesting from './components/two/RouterNesting'
 
 //demo
 import List from './components/demo/List';
@@ -58,27 +59,27 @@ class App extends Component {
             <br />
             {/* <ReactModel /> */}
             {/* <Formsubmit /> */}
-            <TodoList/>
+            {/* <TodoList/> */}
             {/* <Route exact path="/" component={List} />
             <Route path="/Food/:id" component={Food} />
             <Route path="/Login" component={Login} /> */}
-          {/* 
-          //react 路由
+          
+          {/* //react 路由
             <header className="title">
               <Link to='/'>A</Link>
               <Link to='/B'>B</Link>
               <Link to='/C'>C</Link>
-            </header>
+            </header> */}
           
-            <Route exact path="/" component={A} />
+            {/* <Route exact path="/" component={A} />
             <Route path="/B" component={B} />
             <Route path="/C" component={C} />
             <Route path="/content/:aid" component={Content} />
-            <Route path="/producecontent" component={ProduceContent}/>
+            <Route path="/producecontent" component={ProduceContent}/> */}
 
 
-          // 生命周期
-          {
+          {/* 生命周期 */}
+          {/* {
             this.state.flag?<Lifecycle title={this.state.title} />:""
           }
           <br />
@@ -97,6 +98,9 @@ class App extends Component {
           <br />
 
           <button onClick={this.setTitle}>改变父组件title的值</button> */}
+
+          嵌套路由
+          <RouterNesting />
         </div>
       </Router>
     );
